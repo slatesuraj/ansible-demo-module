@@ -1,0 +1,9 @@
+- hosts: localhost
+
+  tasks:
+    - name: Test first module
+      firstmodule:
+        hostname: slate-laptop
+      register: result
+
+    - debug: var=result
